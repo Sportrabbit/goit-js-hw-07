@@ -23,12 +23,12 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
-  containerElem.innerHtml = "";
+  containerElem.innerHTML = "";
 }
 
 function onCreateButtonClick() {
   const amount = +inputElem.value;
-  if (amount <=100) {
+  if (amount <= 100) {
     createBoxes(amount);
     inputElem.value = "";
   }

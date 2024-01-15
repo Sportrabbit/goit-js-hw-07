@@ -5,7 +5,7 @@ const spanElem = document.querySelector("#name-output");
 let previousValue = "";
 
 function onInputChange() {
-    const inputValue = inputElem.ariaValueMax.trim();
+    const inputValue = inputElem.value.trim();
 
     if (previousValue !== inputValue) {
         spanElem.textContent = inputValue || "Anonymous";
